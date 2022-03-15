@@ -10,6 +10,9 @@ body {
 	@media (max-width: 768px) {
 		padding: 20px 0;
 	}
+	@media (max-width: 554px) {
+		padding: 0;
+	}
 }
 
 .wrapper {
@@ -22,10 +25,15 @@ body {
 	@media (max-width: 768px) {
 		width: calc(100% - 40px);
 	}
+	@media (max-width: 554px) {
+		width: 100%;
+		border-radius: 0px;
+	}
 }
 
 .content {
 	padding: 40px 0;
+	position: relative;
 
 	&__title {
 		margin: 35px 0;
@@ -57,9 +65,6 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		@media (max-width: 1300px) {
-			flex-direction: column;
-		}
 	}
 }
 

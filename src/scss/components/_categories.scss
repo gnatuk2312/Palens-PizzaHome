@@ -1,22 +1,25 @@
 @import "variables";
 
 .categories {
-	flex: 1;
-	max-width: 80%;
-
-	@media (max-width: 768px) {
-		max-width: 100%;
-		margin-bottom: 30px;
-	}
-
 	ul {
-		display: flex;
+		display: none;
+		top: 0;
+		left: 0;
+		width: 100%;
+		position: absolute;
+		flex-direction: column;
+		background-color: rgba(255, 255, 255, 0.7);
+		padding: 40px;
+		@media (max-width: 554px) {
+			padding: 40px 10px;
+		}
 
 		li {
+			border: 1px solid black;
 			background-color: #f9f9f9;
 			padding: 13px 30px;
 			border-radius: 30px;
-			margin-right: 10px;
+			margin-top: 10px;
 			font-weight: bold;
 			cursor: pointer;
 			transition: background-color 0.1s ease-in-out;
